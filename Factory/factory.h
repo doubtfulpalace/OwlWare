@@ -38,7 +38,7 @@
 #include "Contest/SirenPatch.hpp"
 #include "VibroFlangePatch.hpp"
 #include "mdaPorts/MdaStereoPatch.hpp"
-#include "mdaPorts/MdaTransientPatch.hpp"
+//#include "mdaPorts/MdaTransientPatch.hpp"
 #include "OliLarkin/XFMPatch.hpp"
 
 #include "Faust/AutoWahPatch.hpp"

@@ -58,6 +58,9 @@ FREERTOS_SRC += event_groups.c
 FREERTOS_SRC += timers.c
 FREERTOS_SRC += heap_4.c
 
+# Factory patch selection
+FACTORY ?= $(TEMPLATEROOT)/Factory
+
 CPP_SRC = main.cpp
 CPP_SRC += Owl.cpp CodecController.cpp MidiController.cpp ApplicationSettings.cpp
 CPP_SRC += PatchRegistry.cpp ProgramManager.cpp
@@ -70,6 +73,7 @@ vpath %.c $(TEMPLATEROOT)/Libraries/FreeRTOS/portable/GCC/ARM_CM4F
 vpath %.c $(TEMPLATEROOT)/Libraries/FreeRTOS/portable/MemMang
 CPPFLAGS += -I$(TEMPLATEROOT)/Libraries/FreeRTOS/include
 CPPFLAGS += -I$(TEMPLATEROOT)/Libraries/FreeRTOS/portable/GCC/ARM_CM4F
+CPPFLAGS += -I$(FACTORY)
 
 vpath %.c $(TEMPLATEROOT)/ProgramSource
 vpath %.cpp $(TEMPLATEROOT)/ProgramSource

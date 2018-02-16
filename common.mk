@@ -24,6 +24,7 @@ BOOTLOADER ?= $(TEMPLATEROOT)/Libraries/OwlBoot/OwlBoot.bin
 vpath %.cpp $(TEMPLATEROOT)/Source
 vpath %.c $(TEMPLATEROOT)/Source
 vpath %.s $(TEMPLATEROOT)/Source
+vpath %.cpp $(FACTORY)
 vpath %.c $(TEMPLATEROOT)/Libraries/syscalls
 # vpath %.c $(CORE)
 vpath %.c $(PERIPH_FILE)/src
